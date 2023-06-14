@@ -7,7 +7,7 @@ pipeline {
               //sh 'sudo snap install gradle --classic'
                 sh 'chmod +x gradlew'
            //   sh 'gradle wrapper'
-                sh './gradlew clean build'
+                sh './gradlew clean build --stacktrace'
             }
         }
        
