@@ -8,7 +8,8 @@ o pipeline {
               //sh 'sudo snap install gradle --classic'
                 // .
                 sh 'echo "Hello"'
-                sh 'echo gradle --version'
+                sh 'gradle --version'
+                sh 'pwd'
                 sh 'chmod +x gradlew'
                 sh 'gradle wrapper'
                 sh './gradlew clean build -g gradle-user-home'
