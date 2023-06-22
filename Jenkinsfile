@@ -8,7 +8,7 @@ pipeline {
               //sh 'sudo snap install gradle --classic'
                 // .
                 //sh 'gradle --version'
-                sh 'java -verison'
+                sh 'java -version'
                 sh 'pwd'
                 sh 'ls'
                 sh 'gradle --version'
