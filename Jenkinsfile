@@ -10,7 +10,7 @@ pipeline {
                 //sh 'gradle --version'
                 sh 'pwd'
                 sh 'ls'
-                //sh 'gradle --version'
+                sh 'gradle --version'
                // sh 'chmod +x gradlew'
                 //sh 'gradle wrapper'
                 //sh './gradlew clean build'
