@@ -1,4 +1,4 @@
-pipeline {
+o pipeline {
     agent any
     stages{
         stage('build gradle service'){
@@ -8,7 +8,7 @@ pipeline {
               //sh 'sudo snap install gradle --classic'
                 // .
                 sh 'echo "Hello"'
-                sh 'gradle --version'
+                sh 'echo gradle --version'
                 sh 'chmod +x gradlew'
                 sh 'gradle wrapper'
                 sh './gradlew clean build -g gradle-user-home'
