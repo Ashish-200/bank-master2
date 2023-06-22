@@ -12,7 +12,7 @@ pipeline {
                 sh 'ls'
                 sh 'chmod +x gradlew'
                 sh 'gradle wrapper'
-                sh './gradlew clean build -g gradle-user-home'
+                sh './gradlew clean build'
             }
         }
        
