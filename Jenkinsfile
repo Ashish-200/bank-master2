@@ -1,4 +1,4 @@
-o pipeline {
+pipeline {
     agent any
     stages{
         stage('build gradle service'){
@@ -7,7 +7,8 @@ o pipeline {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Ashish-200/bank-master2']])
               //sh 'sudo snap install gradle --classic'
                 // .
-    
+                sh 'gradle --version'
+                sh 'pwd'
                 sh 'chmod +x gradlew'
                 sh 'gradle wrapper'
                 sh './gradlew clean build -g gradle-user-home'
