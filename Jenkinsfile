@@ -8,12 +8,13 @@ pipeline {
               //sh 'sudo snap install gradle --classic'
                 // .
                 //sh 'gradle --version'
+                sh 'java -verison'
                 sh 'pwd'
                 sh 'ls'
-               //sh 'gradle --version'
-                sh 'chmod +x gradlew'
+                sh 'gradle --version'
+               // sh 'chmod +x gradlew'
                 //sh 'gradle wrapper'
-                sh './gradlew clean build'
+               // sh './gradlew clean build'
                 //sh 'gradle build'
             }
         }
