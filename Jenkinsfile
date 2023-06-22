@@ -9,6 +9,7 @@ pipeline {
                 // .
                 //sh 'gradle --version'
                 sh 'pwd'
+                sh 'ls'
                 sh 'chmod +x gradlew'
                 sh 'gradle wrapper'
                 sh './gradlew clean build -g gradle-user-home'
