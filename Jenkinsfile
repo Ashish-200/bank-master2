@@ -8,7 +8,7 @@ pipeline {
               //sh 'sudo snap install gradle --classic'
                 // .
                 //sh 'wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp'
-                sh 'curl -O https://services.gradle.org/distributions/gradle-<version>-bin.zip'
+                sh 'curl -O https://services.gradle.org/distributions/gradle-bin.zip'
 
                 sh 'sudo unzip -d /opt/gradle gradle-<version>-bin.zip'
               //sh 'gradle --version'
