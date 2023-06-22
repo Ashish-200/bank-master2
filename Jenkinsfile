@@ -9,7 +9,6 @@ pipeline {
                 // .
                 sh 'wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp'
                 sh 'sudo unzip -d /opt/gradle /tmp/gradle-${VERSION}-bin.zip'
-'
               //sh 'gradle --version'
                 sh 'java -version'
                 sh 'pwd'
