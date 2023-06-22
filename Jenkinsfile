@@ -11,7 +11,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls'
                 sh 'chmod +x gradlew'
-                sh 'gradle wrapper'
+                //sh 'gradle wrapper'
                 sh './gradlew clean build'
             }
         }
