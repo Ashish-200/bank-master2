@@ -7,13 +7,15 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Ashish-200/bank-master2']])
               //sh 'sudo snap install gradle --classic'
                 // .
-                sh 'wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp'
-                sh 'sudo unzip -d /opt/gradle /tmp/gradle-${VERSION}-bin.zip'
+                //sh 'wget https://services.gradle.org/distributions/gradle-${VERSION}-bin.zip -P /tmp'
+                sh 'curl -O https://services.gradle.org/distributions/gradle-<version>-bin.zip'
+
+                sh 'sudo unzip -d /opt/gradle gradle-<version>-bin.zip'
               //sh 'gradle --version'
                 sh 'java -version'
                 sh 'pwd'
                 sh 'ls'
-                sh 'gradle --version'
+               // sh 'gradle --version'
                // sh 'chmod +x gradlew'
                 //sh 'gradle wrapper'
                // sh './gradlew clean build'
